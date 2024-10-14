@@ -33,23 +33,23 @@ This is a RESTful API built using **Node.js**, **Express**, and **MongoDB** to m
 
 
 2. **Install dependencies**:
+    ```bash
     npm install
 
 3. **Set up environment variables**:
  Create a .env file in the root directory and add the following variables:
+    ```bash
+    PORT=8000
+    MONGO_URI=your_mongodb_connection_string
+    ACCESS_TOKEN_SECRET=your_access_token_secret
+    REFRESH_TOKEN_SECRET=your_refresh_token_secret
+    ACCESS_TOKEN_EXPIRY=15m
+    REFRESH_TOKEN_EXPIRY=7d
 
-PORT=8000
-MONGO_URI=your_mongodb_connection_string
-ACCESS_TOKEN_SECRET=your_access_token_secret
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
-ACCESS_TOKEN_EXPIRY=15m
-REFRESH_TOKEN_EXPIRY=7d
 
-
-Run the application:
 4.**Run the application**:
-
-npm start
+    ```bash
+    npm start
 The server will start on http://localhost:8000.
 
 ### What was added:
